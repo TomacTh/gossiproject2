@@ -1,0 +1,74 @@
+.card-box {
+  display: flex;
+  justify-content: center;
+}
+
+h1, h2 {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+  font-variant: small-caps;
+  font-family: URW Gothic L;
+}
+
+.btn-success {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+<<<<<<< HEAD
+  background-color: rgb(52,58,64);
+=======
+  background-color: rgb(52, 58, 64);
+}
+
+body {
+  background-image: linear-gradient(-90deg, darkseagreen, darkslategrey);
+}
+
+a {
+  color: black
+}
+
+a.hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.card-comment {
+  display: flex;
+  justify-content: center;
+}
+
+.card-time {
+  font-size: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px!important;
+  margin-top: 20px!important;
+>>>>>>> 6b28e9f3d1ae41a2f5d092f49dba7f416a17d98d
+}
+.titre {display : flex;
+        justify-content: center;
+        color:white;}
+
+body {background-image: linear-gradient(-90deg,white,grey);}
+
+h1,h2,h3,p,ul {color: rgb(52,58,64)}
+
+a {color: rgb(52,58,64)}
+
+a:hover{background-color: gold; }
+
+.card-text {color:rgb(52,58,64)}
+
+.index {display: flex;
+justify-content: center;
+flex-direction: column;}
+
+
+.home {color: rgb(52,58,64);}

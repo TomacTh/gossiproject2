@@ -1,0 +1,27 @@
+<div style='width: 80%; margin-left: 30px; margin-top: 30px;'>
+  <%= form_for @gossip do |f| %>
+  <%= label_tag 'Title:' %>
+  <%= f.text_field :title, placeholder: 'Your title...', class: "form-control", id: "formGroupExampleInput2" %>
+  <br /><br />
+<<<<<<< HEAD
+  <%= label_tag 'Author:' %>
+ <%= f.text_field :anonymous_gossiper, placeholder: 'Your username...', class: "form-control", id: "formGroupExampleInput2" %>
+
+  <br /><br />
+  <%= label_tag 'Content:' %>
+  <%= f.text_area :content, placeholder: 'Your content...', class: "form-control", id: "formGroupExampleInput2" %>
+
+  <br /><br />
+  <%= f.submit "Add the Gossip", class: "btn btn-success"  %>
+  <a href="<%= gossip_path(@gossip.id)%>" class="btn btn-danger" data-confirm="Are you sure ?" data-method="DELETE">Delete</a></p>
+
+=======
+  <%= label_tag 'Content:' %>
+  <%= f.text_area :content, placeholder: 'Your content...', class: "form-control", id: "formGroupExampleInput2" %>
+  <br /><br />
+    <%= label_tag 'Author:' %>
+  <%= f.text_field :anonymous_gossiper, placeholder: 'Your username...', class: "form-control", id: "formGroupExampleInput2" %>
+  <br /><br />
+  <%= f.submit "Add the Gossip", class: "btn btn-success"  %>
+>>>>>>> 6b28e9f3d1ae41a2f5d092f49dba7f416a17d98d
+<% end %>

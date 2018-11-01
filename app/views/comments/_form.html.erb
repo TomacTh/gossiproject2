@@ -1,0 +1,13 @@
+
+
+<%= form_for([@gossip,@gossip.comments.build]) do |f| %>
+<%= label_tag 'anonymous_commentor:' %>
+<%= f.text_field :anonymous_commentor, placeholder: 'username', class: "form-control", id: "formGroupExampleInput2" %>
+<br />
+
+<%= label_tag 'content:' %>
+<%= f.text_area :content, placeholder: 'Your content...', class: "form-control", id: "formGroupExampleInput2" %>
+
+<br />
+<%= f.submit "Add the Gossip", class: "btn btn-success"  %>
+<% end %>

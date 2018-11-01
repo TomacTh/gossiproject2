@@ -1,0 +1,51 @@
+<h1>GOSSIP <%=params[:id]%></h1>
+  <p>
+<<<<<<< HEAD
+
+<a href="/gossips" class="btn btn-primary">return to all gossips</a
+
+    <div class="card-box">      <div class="card border-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Gossip n°<%=@gossip.id%></div>
+        <div class="card-body">
+          <h5 class="card-title"><%= @gossip.title %></h5>
+         <p class="card-text"><%= @gossip.anonymous_gossiper%></p>
+          <p class="card-text"><%= @gossip.content%></p>
+
+          <p class="card-text"><%= @gossip.created_at%></p>
+          <a href="<%= gossip_path(@gossip.id)%>" class="btn btn-danger" data-confirm="Are you sure ?" data-method="DELETE">Delete</a></p>
+          <a href="<%= edit_gossip_path(@gossip.id)%>" class="btn btn-primary">Edit</a>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </p>
+
+
+
+
+
+  <p> <%= @gossip.comments.count %> Comments<p>
+      <%= render @gossip.comments %>
+      <p>Add a Comment:</p> <br><br>
+<%= render 'comments/form' %>
+=======
+    <div class="card-box">
+      <div class="card border-light mb-3" style="max-width: 18rem;">
+        <div class="card-header"><%=@gossip.title%></div>
+        <div class="card-body">
+          <p class="card-text"><%= @gossip.content%></p>
+          <p class="card-text"><%= @gossip.anonymous_gossiper%></p>
+          <p class="card-time">Created @<%= @gossip.created_at%></p>
+          <p class="card-time">Updated @<%= @gossip.updated_at%></p>
+          <p>Comments (<%= @gossip.comments.size %>)</p>
+        </div>
+      </div>
+    </div>
+    <h2> Comments : </h2>
+    <%= render partial: 'gossips/comment', collection: @gossip.comments.reverse%>
+  <%= render partial: 'layouts/form' %>
+>>>>>>> 6b28e9f3d1ae41a2f5d092f49dba7f416a17d98d
